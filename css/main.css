@@ -1,0 +1,82 @@
+body {
+  font-family: "Work Sans", sans-serif; /* Font Family จาก Google Font*/
+}
+
+/*---------------------------------------------------------------------------*/
+
+.About {
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 24px; /* offset ตูด 24px*/
+}
+
+.Avatar {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 30px 30px 15px -1px grey;
+}
+
+.Botton {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none; /* เอาเส้นใต้ของ ข้อความออก */
+}
+
+.Container {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1484504844383-7676f295d034?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* ความสูงขั้นต่ำ  100% ของหน้าจอ */
+  padding: 128px; /* offset body จากขอบจอทุกด้าน 128px*/
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    padding: 48px;
+  }
+} /*กำหนดความกว้าง Container 48px เมื่อหน้าจอกว้างตำ่กว่า 768px*/
+
+.Content {
+  max-width: 500px;
+}
+
+.Contract {
+  margin-bottom: 48px;
+}
+
+.Contract-icon {
+  margin-right: 12px;
+  width: 16px; /* กำหนดให้ความกว้างของ icon เท่ากัน */
+}
+
+.Contract-item {
+  margin-bottom: 4px;
+}
+
+.Job {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.Name {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .Name {
+    font-size: 36px;
+  }
